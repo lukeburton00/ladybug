@@ -1,4 +1,2 @@
 .env*
-.flaskenv*
-!.env.project
-!.env.vault
+certs
