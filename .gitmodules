@@ -1,0 +1,6 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/lukeburton00/ladybug-client
+[submodule "server"]
+	path = server
+	url = https://github.com/lukeburton00/ladybug-server
