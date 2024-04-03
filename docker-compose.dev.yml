@@ -37,6 +37,15 @@ services:
     restart: on-failure
     stdin_open: true
     tty: true
+    develop:
+      watch:
+        - action: sync
+          path: ./server/src
+          target: /app/src
+        - action: rebuild
+          path: ./server/package.json
+        - action: rebuild
+          path: ./server/app.js
 
   postgres:
     image: postgres
