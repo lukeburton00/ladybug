@@ -67,7 +67,7 @@ services:
       context: ./nginx
       dockerfile: Dockerfile.dev
     ports:
-      - 8080:80
+      - 80:80
       - 443:443
     volumes:
       - ./nginx/nginx.dev.conf:/etc/nginx/nginx.conf:ro
