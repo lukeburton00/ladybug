@@ -31,7 +31,7 @@ The project will be deployed to AWS.
     POSTGRES_HOST=172.17.0.1
     JWT_SECRET= (obtain a secure 128-bit secret or simply define as 'dev_secret')
     JWT_EXPIRES_IN='24h'
-    REFRES_EXPIRES_IN='1w'
+    REFRESH_EXPIRES_IN='1w'
     NODE_ENV=development
 ```
 - Run the following command:
