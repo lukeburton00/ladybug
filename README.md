@@ -40,3 +40,5 @@ The project will be deployed to AWS.
 docker-compose -f docker-compose.dev.yml watch
 ```
 This selects the development Compose file and watches the client and server directories for code changes.
+
+- Visit https://localhost in your browser.
