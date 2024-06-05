@@ -14,10 +14,10 @@ The project will be deployed to AWS.
 ## Dependencies:
 - Docker
 - Docker-Compose
-- OpenSSL (to generate local certificate)
+- OpenSSL
 
 ## To run locally in development mode:
-- Create a /certs directory in the project root. This will need to contain a key.pem file and certificate.pem file to enable SSL and allow http cookies to be sent between the client and the server. Learn how to generate local SSL certificates [here](https://devcenter.heroku.com/articles/ssl-certificate-self).
+- Create a "certs" directory in the project root. This will need to contain a server.key file and a server.crt file to enable SSL and allow http-only cookies to be sent between the client and the server. Learn how to generate local SSL certificates [here](https://devcenter.heroku.com/articles/ssl-certificate-self).
 
 - Create a .env file in the project root. This will need to define the following environment variables:
 ```
@@ -29,7 +29,7 @@ The project will be deployed to AWS.
     POSTGRES_DB=ladybug_dev
     POSTGRES_PORT=5432
     POSTGRES_HOST=172.17.0.1
-    JWT_SECRET= (obtain a secure 128-bit secret or simply define as 'dev_secret')
+    JWT_SECRET= (obtain a secure 128-bit secret or simply define as 'dev_secret' for your dev environment)
     JWT_EXPIRES_IN='24h'
     REFRESH_EXPIRES_IN='1w'
     NODE_ENV=development
